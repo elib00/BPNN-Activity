@@ -14,8 +14,8 @@ namespace BPNN_Activity
     public partial class Form2 : Form
     {
         NeuralNet nn;
-        int minHiddenLayers = 100;
-        int minEpochs = 100;
+        int minHiddenLayers = 1;
+        int minEpochs = 5120;
 
         public Form2()
         {
