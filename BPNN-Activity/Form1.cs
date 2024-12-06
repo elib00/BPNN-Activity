@@ -60,5 +60,11 @@ namespace BPNN_Activity
  
             textBox3.Text = "" + nn.getOuputData(0);
         }
+
+        private void inputANDGateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 ANDGateForm = new Form2();
+            ANDGateForm.Show();
+        }
     }
 }
