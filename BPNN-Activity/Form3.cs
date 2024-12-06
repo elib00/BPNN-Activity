@@ -19,12 +19,12 @@ namespace BPNN_Activity
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             nn = new NeuralNet(2, 100, 1);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             if (nn == null) return;
             for (int x = 0; x < 100; x++)
@@ -51,8 +51,9 @@ namespace BPNN_Activity
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
+
             if (nn == null) return;
             nn.setInputs(0, Convert.ToDouble(textBox1.Text));
             nn.setInputs(1, Convert.ToDouble(textBox2.Text));
@@ -60,6 +61,5 @@ namespace BPNN_Activity
 
             textBox3.Text = "" + nn.getOuputData(0);
         }
-
     }
 }
